@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/chartTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/frequency_analysis_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <!-- LineChart for frequency values -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/frequencyChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/chartTitle"
+        android:layout_above="@+id/peakValue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Peak Frequency -->
+    <TextView
+        android:id="@+id/peakValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/peak_frequency_label"
+        android:textColor="#FF5722"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_above="@id/averageValue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Average Frequency -->
+    <TextView
+        android:id="@+id/averageValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/average_frequency_label"
+        android:textColor="#00BCD4"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/buttonClose"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Close Button -->
+    <Button
+        android:id="@+id/buttonClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/close_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#00BCD4"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

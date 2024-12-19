@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">  <TextView
+    android:id="@+id/chartTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/db_analysis"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:textColor="#212121"  android:layout_centerHorizontal="true"
+    android:layout_marginBottom="16dp"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/decibelChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/chartTitle"
+        android:layout_above="@+id/peakValue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"  />
+
+    <TextView
+        android:id="@+id/peakValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/averageValue"
+        android:text="@string/peak_db"
+        android:textColor="#00BCD4"  android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/averageValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/average_db"
+        android:textColor="#00BCD4"  android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/buttonClose"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>  <Button
+        android:id="@+id/buttonClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/close"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#00BCD4"  android:textColor="@android:color/white"/>
+
+</RelativeLayout>

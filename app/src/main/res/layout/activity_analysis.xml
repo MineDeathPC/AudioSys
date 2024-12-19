@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Decibel Analysis Button -->
+    <Button
+        android:id="@+id/btnDecibel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Decibel Analysis"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Frequency Analysis Button -->
+    <Button
+        android:id="@+id/btnFrequency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Frequency Analysis"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_marginTop="32dp" />
+</LinearLayout>

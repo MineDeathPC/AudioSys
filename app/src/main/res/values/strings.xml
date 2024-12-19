@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AudioSys</string>
+    <string name="peak_db">Peak Decibel: %.2f dB</string>
+    <string name="average_db">Average Decibel: %.2f dB</string>
+    <string name="close">Close</string>
+    <string name="frequency_analysis_title">Frequency Analysis</string>
+    <string name="peak_frequency_label">Peak Frequency (Hz):</string>
+    <string name="average_frequency_label">Average Frequency (Hz):</string>
+    <string name="close_button">Close</string>
+    <string name="peak_frequency">Peak: %.2f Hz</string>
+    <string name="average_frequency">Average: %.2f Hz</string>
+    <string name="db_analysis">dB Analysis</string>
+</resources>

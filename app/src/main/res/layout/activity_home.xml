@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Analysis Button -->
+    <Button
+        android:id="@+id/btnAnalysis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Analysis"
+        android:layout_marginBottom="16dp"
+        android:onClick="onAnalysisClick" />
+
+    <!-- Settings Button -->
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:layout_marginBottom="16dp"
+        android:onClick="onSettingsClick" />
+
+    <!-- Logs Button -->
+    <Button
+        android:id="@+id/btnLogs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logs"
+        android:onClick="onLogsClick" />
+
+    <Button
+        android:id="@+id/buttonStartMonitoring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Monitoring"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginHorizontal="16dp" />
+
+</LinearLayout>

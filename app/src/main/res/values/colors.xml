@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00BCD4</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="teal_700">#03DAC5</color>
+    <color name="red">#FF0000</color>
+    <color name="violet">#8A2BE2</color>  <!-- This is the violet color -->
+</resources>

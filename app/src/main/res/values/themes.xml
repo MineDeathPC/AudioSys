@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AudioSys" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.AudioSys" parent="Base.Theme.AudioSys">
+        <!-- Set the background drawable for all activities -->
+        <item name="android:windowBackground">@drawable/app_background</item>
+        <!-- Force portrait mode globally -->
+        <item name="android:screenOrientation">portrait</item>
+
+    </style>
+
+
+</resources>
