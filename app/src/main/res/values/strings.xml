@@ -3,11 +3,25 @@
     <string name="peak_db">Peak Decibel: %.2f dB</string>
     <string name="average_db">Average Decibel: %.2f dB</string>
     <string name="close">Close</string>
-    <string name="frequency_analysis_title">Frequency Analysis</string>
     <string name="peak_frequency_label">Peak Frequency (Hz):</string>
     <string name="average_frequency_label">Average Frequency (Hz):</string>
+    <string name="frequency_analysis_title">Frequency (Hz) Analysis</string>
+    <string name="bandwidth_label">Bandwidth: Calculating...</string>
+    <string name="dominant_frequency_label">Dominant Frequency: Calculating...</string>
     <string name="close_button">Close</string>
     <string name="peak_frequency">Peak: %.2f Hz</string>
     <string name="average_frequency">Average: %.2f Hz</string>
-    <string name="db_analysis">dB Analysis</string>
+    <string name="db_analysis">Decibel (dB) Analysis</string>
+    <string name="volume_limit">Volume Limit: 50%</string>
+    <string-array name="volume_limit_options">
+        <item>10%</item>
+        <item>20%</item>
+        <item>30%</item>
+        <item>40%</item>
+        <item>50%</item>
+        <item>60%</item>
+        <item>70%</item>
+        <item>80%</item>
+        <item>90%</item>
+    </string-array>
 </resources>

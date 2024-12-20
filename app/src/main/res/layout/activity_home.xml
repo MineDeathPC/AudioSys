@@ -3,42 +3,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp">
+    android:padding="20dp"
+    android:background="?android:attr/windowBackground">
 
-    <!-- Analysis Button -->
-    <Button
-        android:id="@+id/btnAnalysis"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Analysis"
-        android:layout_marginBottom="16dp"
-        android:onClick="onAnalysisClick" />
+    <!-- Title -->
+<TextView
+android:id="@+id/title"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center_horizontal"
+android:layout_marginBottom="0dp"
+    android:layout_marginTop="40dp"
+android:text="@string/app_name"
+android:textSize="60sp"
+android:textColor="@android:color/white"
+android:textStyle="bold"
+android:fontFamily="sans-serif-medium" />
 
-    <!-- Settings Button -->
-    <Button
-        android:id="@+id/btnSettings"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Settings"
-        android:layout_marginBottom="16dp"
-        android:onClick="onSettingsClick" />
+    <!-- Button for Analysis -->
+<Button
+android:id="@+id/btnAnalysis"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Analysis"
+android:textColor="@android:color/white"
+android:background="@drawable/rounded_button"
+android:padding="14dp"
+android:layout_marginBottom="16dp"
+    android:layout_marginTop="85dp"
+android:onClick="onAnalysisClick" />
 
-    <!-- Logs Button -->
-    <Button
-        android:id="@+id/btnLogs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Logs"
-        android:onClick="onLogsClick" />
+    <!-- Button for Settings -->
+<Button
+android:id="@+id/btnSettings"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Settings"
+android:textColor="@android:color/white"
+android:background="@drawable/rounded_button"
+android:padding="14dp"
+android:layout_marginBottom="16dp"
+android:onClick="onSettingsClick" />
 
-    <Button
-        android:id="@+id/buttonStartMonitoring"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Start Monitoring"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginHorizontal="16dp" />
+    <!-- Button for Logs -->
+<Button
+android:id="@+id/btnLogs"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Logs"
+android:textColor="@android:color/white"
+android:background="@drawable/rounded_button"
+android:padding="14dp"
+android:layout_marginBottom="16dp"
+android:onClick="onLogsClick" />
 
-</LinearLayout>
+    <!-- Start Monitoring Button -->
+<Button
+android:id="@+id/buttonStartMonitoring"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Toggle Background Audio Monitoring"
+    android:textStyle="bold"
+android:textColor="@android:color/white"
+android:background="@drawable/rounded_button_green"
+android:padding="16dp"
+android:layout_marginTop="32dp"
+android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
