@@ -2,16 +2,22 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">  <TextView
+    android:background="#AE181818"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
     android:id="@+id/chartTitle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/db_analysis"
-    android:textSize="24sp"
+    android:textSize="28sp"
     android:textStyle="bold"
-    android:textColor="#212121"  android:layout_centerHorizontal="true"
+    android:textColor="#FFFFFF"
+    android:layout_centerHorizontal="true"
     android:layout_marginBottom="16dp"/>
 
+    <!-- dB/time chart-->
     <com.github.mikephil.charting.charts.LineChart
         android:id="@+id/decibelChart"
         android:layout_width="match_parent"
@@ -20,6 +26,8 @@
         android:layout_above="@+id/peakValue"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="24dp"  />
+
+    <!-- peak decibel value-->
 
     <TextView
         android:id="@+id/peakValue"
@@ -31,6 +39,8 @@
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="8dp"/>
+
+    <!-- Average decibel value-->
 
     <TextView
         android:id="@+id/averageValue"

@@ -6,12 +6,28 @@
     android:gravity="center"
     android:padding="16dp">
 
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="0dp"
+        android:text="Audio Analysis"
+        android:textSize="50sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium" />
+
     <!-- Decibel Analysis Button -->
     <Button
         android:id="@+id/btnDecibel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Decibel Analysis"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"
         android:layout_marginBottom="16dp" />
 
     <!-- Frequency Analysis Button -->
@@ -20,6 +36,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Frequency Analysis"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"
         android:layout_marginBottom="16dp" />
 
     <!-- Back Button -->
@@ -28,5 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Back"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button_red"
         android:layout_marginTop="32dp" />
 </LinearLayout>

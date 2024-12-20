@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#AE181818">
 
     <!-- Title -->
     <TextView
@@ -12,7 +13,7 @@
         android:text="@string/frequency_analysis_title"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="#212121"
+        android:textColor="#FFFFFF"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp" />
 
@@ -22,29 +23,30 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_below="@id/chartTitle"
-        android:layout_above="@+id/peakValue"
+        android:layout_above="@+id/bandwidthValue"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="24dp" />
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1" />
 
-    <!-- Peak Frequency -->
+    <!-- Bandwidth -->
     <TextView
-        android:id="@+id/peakValue"
+        android:id="@+id/bandwidthValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/peak_frequency_label"
+        android:text="@string/bandwidth_label"
         android:textColor="#FF5722"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_above="@id/averageValue"
+        android:layout_above="@id/dominantFreqValue"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="8dp" />
 
-    <!-- Average Frequency -->
+    <!-- Dominant Frequency -->
     <TextView
-        android:id="@+id/averageValue"
+        android:id="@+id/dominantFreqValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/average_frequency_label"
+        android:text="@string/dominant_frequency_label"
         android:textColor="#00BCD4"
         android:textSize="18sp"
         android:textStyle="bold"
